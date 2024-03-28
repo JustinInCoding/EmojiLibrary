@@ -38,6 +38,10 @@ import UIKit
 class ViewController: UIViewController {
 	
 	@IBOutlet weak var collectionView: UICollectionView!
+	
+	@IBOutlet weak var deleteButton: UIBarButtonItem!
+	@IBOutlet weak var addButton: UIBarButtonItem!
+	
 	let dataSource = DataSource()
 	let delegate = EmojiCollectionViewDelegate(numberOfItemsPerRow: 6, interItemSpacing: 8)
 	
@@ -45,12 +49,16 @@ class ViewController: UIViewController {
 		super.viewDidLoad()
 		collectionView.dataSource = dataSource
 		collectionView.delegate = delegate
+		collectionView.allowsMultipleSelection = true
 		
 		navigationItem.leftBarButtonItem = editButtonItem
 	}
 	
 	override func setEditing(_ editing: Bool, animated: Bool) {
 		super.setEditing(editing, animated: animated)
+		
+		deleteButton.isEnabled = editing
+		addButton.isEnabled = !editing
 		
 		collectionView.indexPathsForVisibleItems.forEach {
 			guard let emojiCell = collectionView.cellForItem(at: $0) as? EmojiCell else { return }
@@ -93,6 +101,23 @@ class ViewController: UIViewController {
 		let insertedIndex = IndexPath(item: emojiCount, section: 0)
 		collectionView.insertItems(at: [insertedIndex])
 	}
+	
+	@IBAction func deleteEmoji(_ sender: Any) {
+		guard let selectedIndices = collectionView.indexPathsForSelectedItems else { return }
+		let sectionsToDelete = Set(selectedIndices.map({ $0.section }))
+		sectionsToDelete.forEach { section in
+			let indexPathsForSection = selectedIndices.filter { indexPath in
+				indexPath.section == section
+			}
+			let sortedIndexPaths = indexPathsForSection.sorted { indexPath1, indexPath2 in
+				indexPath1.item > indexPath2.item
+			}
+			
+			dataSource.deleteEmoji(at: sortedIndexPaths)
+			collectionView.deleteItems(at: sortedIndexPaths)
+		}
+	}
+	
 }
 
 
