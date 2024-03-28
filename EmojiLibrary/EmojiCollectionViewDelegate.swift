@@ -37,4 +37,5 @@ class EmojiCollectionViewDelegate: NSObject, UICollectionViewDelegateFlowLayout 
 		}
 	}
 	
+	
 }
