@@ -17,6 +17,7 @@
 		0AD3AE2F2509B99D0001FE1E /* EmojiDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD3AE2D2509B99D0001FE1E /* EmojiDetailController.swift */; };
 		0AD3AE312509BE890001FE1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AD3AE302509BE890001FE1E /* LaunchScreen.storyboard */; };
 		98C8E7602BB5640C00726E06 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C8E75F2BB5640C00726E06 /* DataSource.swift */; };
+		98C8E7622BB5696F00726E06 /* EmojiCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C8E7612BB5696F00726E06 /* EmojiCollectionViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		0AD3AE2D2509B99D0001FE1E /* EmojiDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiDetailController.swift; sourceTree = "<group>"; };
 		0AD3AE302509BE890001FE1E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98C8E75F2BB5640C00726E06 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		98C8E7612BB5696F00726E06 /* EmojiCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCollectionViewDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				0AD3AE2C2509B99D0001FE1E /* Emoji.swift */,
 				0AD3AE2D2509B99D0001FE1E /* EmojiDetailController.swift */,
 				98C8E75F2BB5640C00726E06 /* DataSource.swift */,
+				98C8E7612BB5696F00726E06 /* EmojiCollectionViewDelegate.swift */,
 				0AD3AE1A2509B8FA0001FE1E /* ViewController.swift */,
 				0AD3AE2A2509B9580001FE1E /* EmojiCell.swift */,
 				0AD3AE1C2509B8FA0001FE1E /* Main.storyboard */,
@@ -155,6 +158,7 @@
 				0AD3AE172509B8FA0001FE1E /* AppDelegate.swift in Sources */,
 				0AD3AE2F2509B99D0001FE1E /* EmojiDetailController.swift in Sources */,
 				0AD3AE2B2509B9580001FE1E /* EmojiCell.swift in Sources */,
+				98C8E7622BB5696F00726E06 /* EmojiCollectionViewDelegate.swift in Sources */,
 				0AD3AE192509B8FA0001FE1E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
