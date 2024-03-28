@@ -16,6 +16,7 @@
 		0AD3AE2E2509B99D0001FE1E /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD3AE2C2509B99D0001FE1E /* Emoji.swift */; };
 		0AD3AE2F2509B99D0001FE1E /* EmojiDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD3AE2D2509B99D0001FE1E /* EmojiDetailController.swift */; };
 		0AD3AE312509BE890001FE1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AD3AE302509BE890001FE1E /* LaunchScreen.storyboard */; };
+		98C8E7602BB5640C00726E06 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C8E75F2BB5640C00726E06 /* DataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		0AD3AE2C2509B99D0001FE1E /* Emoji.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 		0AD3AE2D2509B99D0001FE1E /* EmojiDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiDetailController.swift; sourceTree = "<group>"; };
 		0AD3AE302509BE890001FE1E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		98C8E75F2BB5640C00726E06 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				0AD3AE182509B8FA0001FE1E /* SceneDelegate.swift */,
 				0AD3AE2C2509B99D0001FE1E /* Emoji.swift */,
 				0AD3AE2D2509B99D0001FE1E /* EmojiDetailController.swift */,
+				98C8E75F2BB5640C00726E06 /* DataSource.swift */,
 				0AD3AE1A2509B8FA0001FE1E /* ViewController.swift */,
 				0AD3AE2A2509B9580001FE1E /* EmojiCell.swift */,
 				0AD3AE1C2509B8FA0001FE1E /* Main.storyboard */,
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98C8E7602BB5640C00726E06 /* DataSource.swift in Sources */,
 				0AD3AE2E2509B99D0001FE1E /* Emoji.swift in Sources */,
 				0AD3AE1B2509B8FA0001FE1E /* ViewController.swift in Sources */,
 				0AD3AE172509B8FA0001FE1E /* AppDelegate.swift in Sources */,
